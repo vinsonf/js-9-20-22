@@ -1,5 +1,5 @@
 // alert when button clicked
-document.querySelector("button").addEventListener("click", () => {
+document.querySelector("button").addEventListener( "click", () => {
   alert();
 });
 
