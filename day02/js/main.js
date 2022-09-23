@@ -152,19 +152,15 @@ footer1.append(p1);
 function createElement(tag, text, parent) {
     const element = document.createElement(tag);
     element.innerHTML = text;
-    rparent.append(element);
+    parent.append(element);
+    return element;
 }
-
 createElement('h1', 'hello my name is ' + nickName, document.body);
 createElement('button', 'click me', document.body);
 createElement('section', 'number is ' + number, document.body);
 createElement('footer', '© ' + year, document.body);
 
-
-
-
 // strings
-
 myString = "Hello World";
 myString = 'Hello World';
 myString = `Hello World`; // special string (template literal)
