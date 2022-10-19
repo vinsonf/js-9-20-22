@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <form name="element">
+        <label>Text</label>
+        <input type="text" name="text">
+        <label>Font Size</label>
+        <input type="range" name="fontSize" min="20" max="80">
+        <label>Text Color</label>
+        <input type="color" name="color">
+        <label>Background Color</label>
+        <input type="color" name="bg">
+        <label>Padding</label>
+        <input type="range" name="padding" min="0" max="50">
+        <label > Create New</label>
+        <input type="checkbox" name="createNew">
+        <label>Border</label>
+        <input type="number" name="border">
+        <label>Border Color</label>
+        <input type="color" name="borderColor">
+        <label for="">text align</label>
+        <select name="textAlign">
+            <option value="left">left</option>
+            <option value="center">center</option>
+            <option value="right">right</option>
+        </select>
+        <label for="">Submit</label>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
