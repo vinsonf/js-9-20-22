@@ -1,5 +1,5 @@
 
-import { dataTypes } from "./data-types.js";
+// import { dataTypes } from "./data-types.js";
 
 
 // const form = document.querySelector('form');
@@ -42,9 +42,13 @@ const elements = ['h1', 'h2', 'h3', 'p', 'div', 'span', 'a', 'li'];
 
 
 
-
-document.forms.element.submit.addEventListener('click', function(event) {
+// document.forms.element.addEventListener('submit', function(event) {
+//     event.preventDefault();
+// });
+document.forms.element.addEventListener('submit', function(event) {
+    console.log(event);
     event.preventDefault();
+    console.log(document.forms.element.invalid);
     if (selectedElement) {
         selectedElement.remove();
         selectedElement = null;
@@ -88,7 +92,8 @@ document.forms.element.submit.addEventListener('click', function(event) {
 
     selectedElement = element;
 
-    form.remove();
+    // form.remove();
+    return false;
 
 
-});
+}, false);

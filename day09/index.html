@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="./js/main.js"></script>
+    <script defer src="./js/forms.js"></script>
 </head>
 <body>
     
@@ -15,9 +15,9 @@
             margin-top: 10px;
         }
     </style>
-    <form name="element">
+    <form name="element" onsubmit=" return false">
         <label>Text</label>
-        <input type="text" name="text">
+        <input type="text" name="text" required="required">
         <label>Font Size</label>
         <input type="range" name="fontSize" min="20" max="80">
         <label>Text Color</label>
@@ -33,7 +33,12 @@
         <label>Border Color</label>
         <input type="color" name="borderColor">
         <label for="">text align</label>
-        <select name="textAlign">
+       
+            <input type="radio" name="textAlign" value="left" required>
+            <input type="radio" name="textAlign" value="center">
+            <input type="radio" name="textAlign" value="right">
+       
+        <select name="textAlign" >
             <option value="left">left</option>
             <option value="center">center</option>
             <option value="right">right</option>
