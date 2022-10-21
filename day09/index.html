@@ -17,7 +17,7 @@
     </style>
     <form name="element" >
         <label>Text</label>
-        <input type="text" name="text" required="required">
+        <input type="text" name="text" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
         <label>Font Size</label>
         <input type="range" name="fontSize" min="20" max="80">
         <label>Text Color</label>
